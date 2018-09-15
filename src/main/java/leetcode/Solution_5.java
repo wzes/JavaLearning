@@ -8,6 +8,7 @@ import org.junit.Test;
  * @date on 8/28/18
  */
 public class Solution_5 {
+
     @Test
     public void Test() {
         Assert.assertEquals("aba", longestPalindrome("babad"));

@@ -11,7 +11,7 @@ public class BenchmarkTest {
 
     @Benchmark
     public void testMethod() {
-        // This is a demo/sample template for building your JMH benchmarks. Edit as needed.
+        // This is value demo/sample template for building your JMH benchmarks. Edit as needed.
         // Put your benchmark code here.
 
         int a = 1;

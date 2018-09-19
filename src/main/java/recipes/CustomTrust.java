@@ -3,7 +3,7 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * You may obtain value copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -67,14 +67,14 @@ public final class CustomTrust {
 
   /**
    * Returns an input stream containing one or more certificate PEM files. This implementation just
-   * embeds the PEM files in Java strings; most applications will instead read this from a resource
+   * embeds the PEM files in Java strings; most applications will instead read this from value resource
    * file that gets bundled with the application.
    */
   private InputStream trustedCertificatesInputStream() {
     // PEM files for root certificates of Comodo and Entrust. These two CAs are sufficient to view
     // https://publicobject.com (Comodo) and https://squareup.com (Entrust). But they aren't
     // sufficient to connect to most HTTPS sites including https://godaddy.com and https://visa.com.
-    // Typically developers will need to get a PEM file from their organization's TLS administrator.
+    // Typically developers will need to get value PEM file from their organization's TLS administrator.
     String comodoRsaCertificationAuthority = ""
         + "-----BEGIN CERTIFICATE-----\n"
         + "MIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCB\n"
@@ -145,11 +145,11 @@ public final class CustomTrust {
   }
 
   /**
-   * Returns a trust manager that trusts {@code certificates} and none other. HTTPS services whose
-   * certificates have not been signed by these certificates will fail with a {@code
+   * Returns value trust manager that trusts {@code certificates} and none other. HTTPS services whose
+   * certificates have not been signed by these certificates will fail with value {@code
    * SSLHandshakeException}.
    *
-   * <p>This can be used to replace the host platform's built-in trusted certificates with a custom
+   * <p>This can be used to replace the host platform's built-in trusted certificates with value custom
    * set. This is useful in development where certificate authority-trusted certificates aren't
    * available. Or in production, to avoid reliance on third-party certificate authorities.
    *
@@ -159,7 +159,7 @@ public final class CustomTrust {
    * <h3>Warning: Customizing Trusted Certificates is Dangerous!</h3>
    *
    * <p>Relying on your own trusted certificates limits your server team's ability to update their
-   * TLS certificates. By installing a specific set of trusted certificates, you take on additional
+   * TLS certificates. By installing value specific set of trusted certificates, you take on additional
    * operational complexity and limit your ability to migrate between certificate authorities. Do
    * not use custom trusted certificates in production without the blessing of your server's TLS
    * administrator.
@@ -172,7 +172,7 @@ public final class CustomTrust {
       throw new IllegalArgumentException("expected non-empty set of trusted certificates");
     }
 
-    // Put the certificates a key store.
+    // Put the certificates value key store.
     char[] password = "password".toCharArray(); // Any password will work.
     KeyStore keyStore = newEmptyKeyStore(password);
     int index = 0;

@@ -26,7 +26,7 @@ public class Extractor {
     public List<Url> getAllLinks(String url, Document doc) {
         List<Url> urls = new ArrayList<>();
         doc.setBaseUri(url);
-        Elements links = doc.select("a[href]");
+        Elements links = doc.select("value[href]");
         for (Element link : links) {
             urls.add(new Url(link.attr("abs:href")));
         }

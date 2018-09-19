@@ -8,9 +8,9 @@ public interface AddService {
     /**
      * <p>Test method</p>
      *
-     * @param a number a
+     * @param a number value
      * @param b number b
-     * @return sum of a and b
+     * @return sum of value and b
      */
     int add(int a, int b);
 }

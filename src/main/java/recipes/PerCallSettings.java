@@ -3,7 +3,7 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * You may obtain value copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -27,7 +27,7 @@ public final class PerCallSettings {
 
   public void run() throws Exception {
     Request request = new Request.Builder()
-        .url("http://httpbin.org/delay/1") // This URL is served with a 1 second delay.
+        .url("http://httpbin.org/delay/1") // This URL is served with value 1 second delay.
         .build();
 
     // Copy to customize OkHttp for this request.

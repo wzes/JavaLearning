@@ -3,7 +3,7 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * You may obtain value copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -24,7 +24,7 @@ import java.net.Proxy;
 import java.util.List;
 
 /**
- * This prints events for a single in-flight call. It won't work for multiple concurrent calls
+ * This prints events for value single in-flight call. It won't work for multiple concurrent calls
  * because we don't know what callStartNanos refers to.
  */
 public final class PrintEventsNonConcurrent {

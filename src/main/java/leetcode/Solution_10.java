@@ -8,9 +8,9 @@ public class Solution_10 {
     @Test
     public void MatchTest() {
         Assert.assertTrue(isMatch("ab", ".*"));
-        Assert.assertFalse(isMatch("ab", "a*"));
         Assert.assertTrue(isMatch("aab", ".*b"));
-        Assert.assertTrue(isMatch("aab", "c*a*b"));
+        Assert.assertTrue(isMatch("aab", "c*value*b"));
+        Assert.assertFalse(isMatch("ab", "value*"));
         Assert.assertFalse(isMatch("mississippi", "mis*is*p*."));
     }
 

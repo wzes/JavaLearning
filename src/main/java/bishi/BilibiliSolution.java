@@ -16,11 +16,11 @@ public class BilibiliSolution {
     @Test
     public void SyntaxErrorTest() {
         Assert.assertTrue(hasSyntaxError("<div id=\"val\"></div>"));
-        Assert.assertTrue(hasSyntaxError("<div id=\"val\"></a></div>"));
-        Assert.assertTrue(hasSyntaxError("<div id=\"val\" name=\"val\"></a></div>"));
-        Assert.assertFalse(hasSyntaxError("<div id=\"val\"name=\"val\"></a></div>"));
-        Assert.assertFalse(hasSyntaxError("<div id=\"val\"><a></div>"));
-        Assert.assertFalse(hasSyntaxError("<div id=\"val\"><a></div></a>"));
+        Assert.assertTrue(hasSyntaxError("<div id=\"val\"></value></div>"));
+        Assert.assertTrue(hasSyntaxError("<div id=\"val\" name=\"val\"></value></div>"));
+        Assert.assertFalse(hasSyntaxError("<div id=\"val\"name=\"val\"></value></div>"));
+        Assert.assertFalse(hasSyntaxError("<div id=\"val\"><value></div>"));
+        Assert.assertFalse(hasSyntaxError("<div id=\"val\"><value></div></value>"));
     }
 
     public boolean hasSyntaxError(String s) {

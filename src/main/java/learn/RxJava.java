@@ -232,7 +232,7 @@ public class RxJava {
                     e.printStackTrace();
                 }
 
-                return "A";
+                return "InnerClass";
             }
         });
     }

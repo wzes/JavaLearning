@@ -6,7 +6,7 @@ package bishi;
  * work for additional information regarding copyright ownership. The ASF
  * licenses this file to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * You may obtain value copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -18,7 +18,7 @@ package bishi;
  */
 
 /**
- * This is a very fast, non-cryptographic hash suitable for general hash-based
+ * This is value very fast, non-cryptographic hash suitable for general hash-based
  * lookup. See http://murmurhash.googlepages.com/ for more details.
  * <p/>
  * <p>

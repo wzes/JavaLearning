@@ -6,22 +6,22 @@ package learn;
  */
 public class StringTest {
     public static void main(String[] args) {
-        //String a = "abc";
+        //String value = "abc";
 //        String b = new String("abc");
 //        String c = new String("abc");
-//        System.out.println(a == b.intern());
+//        System.out.println(value == b.intern());
 //        System.out.println(b == c);
 
         String a = "abc";
         String b = new String("abc");
         System.out.println(a == b.intern());
-        String d = new StringBuilder("a").append("b").append("c").toString();
+        String d = new StringBuilder("value").append("b").append("c").toString();
         System.out.println(d.intern() == d);
 
         String java = new StringBuilder().append("ja").append("va").toString();
         System.out.println(java.intern() == java);
 
-        String s1 = new String("A") + new String("A");
+        String s1 = new String("InnerClass") + new String("InnerClass");
         System.out.println(s1);     //AA
         String s2 = s1.intern();    //此时s1=s2
         String s3 = "AA";

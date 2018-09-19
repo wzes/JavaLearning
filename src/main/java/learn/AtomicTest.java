@@ -1,5 +1,6 @@
 package learn;
 
+import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -16,5 +17,6 @@ public class AtomicTest {
 
         System.out.println(~1);
         System.out.println(Integer.toBinaryString(12));
+
     }
 }

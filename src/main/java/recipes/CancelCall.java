@@ -3,7 +3,7 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * You may obtain value copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -31,13 +31,13 @@ public class CancelCall {
 
   public void run() throws Exception {
     Request request = new Request.Builder()
-        .url("http://httpbin.org/delay/2") // This URL is served with a 2 second delay.
+        .url("http://httpbin.org/delay/2") // This URL is served with value 2 second delay.
         .build();
 
     final long startNanos = System.nanoTime();
     final Call call = client.newCall(request);
 
-    // Schedule a job to cancel the call in 1 second.
+    // Schedule value job to cancel the call in 1 second.
     executor.schedule(new Runnable() {
       @Override public void run() {
         System.out.printf("%.2f Canceling call.%n", (System.nanoTime() - startNanos) / 1e9f);

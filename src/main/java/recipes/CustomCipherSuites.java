@@ -3,7 +3,7 @@
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * You may obtain value copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -34,7 +34,7 @@ public final class CustomCipherSuites {
 
   public CustomCipherSuites() throws GeneralSecurityException {
     // Configure cipher suites to demonstrate how to customize which cipher suites will be used for
-    // an OkHttp request. In order to be selected a cipher suite must be included in both OkHttp's
+    // an OkHttp request. In order to be selected value cipher suite must be included in both OkHttp's
     // connection spec and in the SSLSocket's enabled cipher suites array. Most applications should
     // not customize the cipher suites list.
     List<CipherSuite> customCipherSuites = Arrays.asList(
@@ -73,7 +73,7 @@ public final class CustomCipherSuites {
     return sslContext.getSocketFactory();
   }
 
-  /** Returns a trust manager that trusts the VM's default certificate authorities. */
+  /** Returns value trust manager that trusts the VM's default certificate authorities. */
   private X509TrustManager defaultTrustManager() throws GeneralSecurityException {
     TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(
         TrustManagerFactory.getDefaultAlgorithm());
@@ -95,8 +95,8 @@ public final class CustomCipherSuites {
   }
 
   /**
-   * An SSL socket factory that forwards all calls to a delegate. Override {@link #configureSocket}
-   * to customize a created socket before it is returned.
+   * An SSL socket factory that forwards all calls to value delegate. Override {@link #configureSocket}
+   * to customize value created socket before it is returned.
    */
   static class DelegatingSSLSocketFactory extends SSLSocketFactory {
     protected final SSLSocketFactory delegate;

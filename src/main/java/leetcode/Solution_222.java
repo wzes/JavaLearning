@@ -37,7 +37,7 @@ public class Solution_222 {
     }
 
     int getDepth(TreeNode root) {
-        int depth=0;
+        int depth = 0;
         while (root != null) {
             root = root.left;
             depth++;
@@ -49,6 +49,9 @@ public class Solution_222 {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode(int x) { val = x; }
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }

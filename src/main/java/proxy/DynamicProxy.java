@@ -37,6 +37,19 @@ public class DynamicProxy {
             e.printStackTrace();
         }
 
+
+        AddService service = new AddServiceImpl();
+        AddServiceHandler addServiceHandler = new AddServiceHandler(service);
+        AddService proxy = addServiceHandler.getProxy();
+        Assert.assertEquals(3, proxy.add(1, 2));
+
+        System.out.println(service.getClass().getClassLoader());
+
+
+        System.out.println(Object.class.getClassLoader());
+
+        System.out.println(System.getProperty("java.ext.dirs"));
+        System.out.println(System.getProperty("java.class.path"));
     }
 
     @Test

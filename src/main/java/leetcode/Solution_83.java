@@ -9,7 +9,7 @@ import java.util.HashMap;
  * @author Create by xuantang
  * @date on 9/5/18
  */
-public class Sulotion_83 {
+public class Solution_83 {
     @Test
     public void DeleteTest() {
         ListNode node = new ListNode(1);

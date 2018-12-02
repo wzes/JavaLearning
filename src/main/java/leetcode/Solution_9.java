@@ -7,7 +7,7 @@ import org.junit.Test;
  * @author Create by xuantang
  * @date on 9/3/18
  */
-public class Sulotion_9 {
+public class Solution_9 {
 
     @Test
     public void PalindromeTest() {

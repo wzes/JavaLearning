@@ -16,7 +16,7 @@ public class UnsafeTest {
         InnerThread innerThread = new InnerThread(unsafe);
         innerThread.run();
 
-        //Thread.sleep(2000);
+        // Thread.sleep(2000);
         // 取消挂起
         unsafe.unpark(innerThread);
     }

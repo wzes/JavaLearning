@@ -44,14 +44,4 @@ public class Solution_222 {
         }
         return depth;
     }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

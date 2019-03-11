@@ -67,7 +67,7 @@ public class Solution_2 {
         ListNode pre = l1;
         ListNode cur = l1.next;
         pre.next = null;
-        // reverse list
+        // reverse paths
         while (cur != null) {
             ListNode tmp = cur.next;
             cur.next = pre;
